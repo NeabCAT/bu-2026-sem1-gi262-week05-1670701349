@@ -102,6 +102,10 @@ namespace Solution
             //        return 0;
             //    }
             //}
+            Array.Sort(enemies, (a, b) =>
+            {
+                return a.energy.CompareTo(b.energy);
+            });
 
             return enemies;
         }
